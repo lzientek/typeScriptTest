@@ -1,0 +1,6 @@
+{
+    "name": "test type script",
+    "dependencies": {
+        "express": "^4.14.0"
+    }
+}

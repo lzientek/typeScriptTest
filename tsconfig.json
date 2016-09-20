@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "bin",
+        "sourceRoot": "src",
+        "target": "es5",
+        "sourceMap": true,
+        "module": "commonjs",
+        "removeComments": true,
+        "noImplicitAny": false
+    },
+    "compileOnSave": true,
+    "exclude": [
+        "bin",
+        "node_modules"
+    ]
+}

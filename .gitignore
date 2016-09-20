@@ -1,3 +1,4 @@
 build/**
 typings/**
-bin
+bin/**
+node_modules/**

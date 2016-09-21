@@ -1,6 +1,8 @@
 {
-    "name": "test type script",
-    "dependencies": {
-        "express": "^4.14.0"
-    }
+  "name": "poker planning",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10"
+  }
 }

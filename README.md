@@ -1,5 +1,5 @@
-# typeScriptTest
-npm install
-typings install
-tsc -p .
-make run-dev
+# Planning POKER cards 
+
+install
+
+make deploy-dev

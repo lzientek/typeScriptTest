@@ -1,5 +1,6 @@
 {
   "globalDependencies": {
+    "bluebird": "registry:dt/bluebird#3.0.0+20160907110115",
     "connect-mongo": "registry:dt/connect-mongo#0.0.0+20160317120654",
     "express": "registry:dt/express#4.0.0+20160708185218",
     "express-serve-static-core": "registry:dt/express-serve-static-core#4.0.0+20160914120416",

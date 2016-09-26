@@ -6,6 +6,12 @@
       "public-before-private",
       "static-before-instance",
       "variables-before-functions"
-    ]
+    ],
+    "no-consecutive-blank-lines": true,
+    "quotemark": [
+      "single","jsx-double"
+    ],
+    "indent": [true,2],
+    
   }
 }

@@ -1,19 +1,19 @@
 import mongodb = require('mongodb');
 import Promise = require('bluebird');
+import { config }  from "../config";
 
-let mongoUrl: string = '';
 let myDb: any = null;
 
 export function getConnection(): any {
-    return new Promise(function(resolve: any, reject: any): any {
+    return new Promise((resolve: any, reject: any): any => {
         if (!myDb) {
-    		mongodb.MongoClient.connect(mongoUrl, function(error: any, db: mongodb.Db): void{
+    		mongodb.MongoClient.connect(config.db.connectionString, (error: any, db: mongodb.Db): void => {
                 if (error) {
     				reject(error);
                 } else {
                     myDb = {
-                        db: db,
-                        users: db.collection('Users')
+                        db,
+                        users: db.collection('Users'),
                     };
                     resolve(myDb);
                 }

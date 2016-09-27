@@ -2,7 +2,7 @@ import mongodb = require('mongodb');
 import Promise = require('bluebird');
 import { config }  from "../config";
 
-let myDb: any = null;
+let myDb: mongodb.Db = null;
 
 export function getConnection(): any {
     return new Promise((resolve: any, reject: any): any => {
@@ -11,10 +11,7 @@ export function getConnection(): any {
                 if (error) {
     				reject(error);
                 } else {
-                    myDb = {
-                        db,
-                        users: db.collection('Users'),
-                    };
+                    myDb = db;
                     resolve(myDb);
                 }
             });

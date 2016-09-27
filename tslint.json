@@ -11,7 +11,9 @@
     "quotemark": [
       "single","jsx-double"
     ],
-    "indent": [true,2],
-    
+    "variable-name": [
+      "allow-leading-underscore"
+    ],
+    "indent": [true,4]
   }
 }
